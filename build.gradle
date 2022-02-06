@@ -7,10 +7,14 @@ repositories {
     mavenCentral()
 }
 
-def allureVersion = "2.13.9",
-    selenideVersion = "5.21.0",
-    slf4jVersion = "1.7.29",
-    junitVersion = "5.7.1"
+def allureVersion = "2.14.0",
+    selenideVersion = "5.20.1",
+    junitVersion = "5.7.1",
+    aspectjVersion = "1.9.6",
+    appiumVersion = "7.3.0",
+    restAssuredVersion = "4.3.3",
+    ownerVersion = "1.0.12"
+
 
 allure {
     version = allureVersion
@@ -24,16 +28,15 @@ allure {
 
 dependencies {
     testImplementation(
-            "org.aspectj:aspectjweaver:1.9.6",
-            "org.aeonbits.owner:owner:1.0.12",
+            "org.aspectj:aspectjweaver:$aspectjVersion",
             "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
-            "io.appium:java-client:7.3.0",
-            "io.rest-assured:rest-assured:4.3.3",
-            "org.junit.jupiter:junit-jupiter-api:$junitVersion")
-    testRuntimeOnly(
-            "org.slf4j:slf4j-simple:$slf4jVersion",
-            "org.junit.jupiter:junit-jupiter-engine:$junitVersion")
+            "io.appium:java-client:$appiumVersion",
+            "io.rest-assured:rest-assured:$restAssuredVersion",
+            "org.junit.jupiter:junit-jupiter-api:$junitVersion",
+            "org.aeonbits.owner:owner:$ownerVersion")
+    compileOnly("io.qameta.allure:allure-java-commons:$allureVersion")
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
 }
 
 tasks.withType(JavaCompile) {
@@ -42,9 +45,8 @@ tasks.withType(JavaCompile) {
     targetCompatibility = JavaVersion.VERSION_1_8
 }
 
+
 tasks.withType(Test) {
-    if (System.getProperty("deviceHost") == null)
-        System.setProperty("deviceHost", "selenoid")
     systemProperties(System.getProperties())
     useJUnitPlatform()
 
@@ -57,14 +59,8 @@ tasks.withType(Test) {
     }
 }
 
-task web(type: Test) {
+task selenide_android(type: Test) {
     useJUnitPlatform {
-        includeTags 'web'
-    }
-}
-
-task mobile(type: Test) {
-    useJUnitPlatform {
-        includeTags 'mobile'
+        includeTags 'selenide_android'
     }
 }
