@@ -15,10 +15,13 @@ public class BrowserstackTests extends TestBase {
     @Test
     @DisplayName("Successful tests in GoogleTranslate android app")
     void searchTest() {
-        step("Check input", () -> {
 
+        step("Go to the home page", () -> {
             $(MobileBy.id("com.google.android.apps.translate:id/button_done")).click();
             $(MobileBy.id("com.google.android.apps.translate:id/design_menu_item_text")).click();
+
+        });
+        step("Input check", () -> {
             $(MobileBy.id("com.google.android.apps.translate:id/touch_to_type_text")).click();
             $(MobileBy.id("com.google.android.apps.translate:id/edit_input")).val("Hello");
             $(MobileBy.id("com.google.android.apps.translate:id/result_selector")).click();
