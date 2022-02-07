@@ -16,7 +16,7 @@ public class BrowserstackTests extends TestBase {
     @DisplayName("Successful tests in GoogleTranslate android app")
     void searchTest() {
 
-        step("Go to the home page", () -> {
+        step("Go to the home page check", () -> {
             $(MobileBy.id("com.google.android.apps.translate:id/button_done")).click();
             $(MobileBy.id("com.google.android.apps.translate:id/design_menu_item_text")).click();
 
