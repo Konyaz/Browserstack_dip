@@ -19,6 +19,7 @@ public class BrowserstackTests extends TestBase {
         step("Go to the home page check", () -> {
             $(MobileBy.id("com.google.android.apps.translate:id/button_done")).click();
             $(MobileBy.id("com.google.android.apps.translate:id/design_menu_item_text")).click();
+            $(MobileBy.id("com.google.android.apps.translate:id/toolbar_logo_text")).shouldHave(text("Translate"));
 
         });
         step("Input check", () -> {
