@@ -17,7 +17,10 @@
 ![Selenoid](images/icons/Selenoid.png)
 ![Telegram](images/icons/Telegram.png)
 
-### Еxamples of UI tests are <a target="_blank" href="https://jenkins.autotests.cloud/job/Browserstack_dip/">here</a> :green_circle:
+### Еxamples of UI tests are <a target="_blank" href="https://github.com/Konyaz/insales_dip/">here</a> :green_circle:
+### Еxamples of Api automation tests are <a target="_blank" href="https://github.com/Konyaz/rest_assured_dip/">here</a> :green_circle:
+
+
 
 ## Run locally
 
