@@ -54,6 +54,7 @@ gradle clean test
 
 ### Jenkins
 Click <a target="_blank" href="https://jenkins.autotests.cloud/job/Browserstack_dip/">here</a> to run the tests.
+
 ![Jenkins](images/Jenkins.png)
 
 ### Telegram
