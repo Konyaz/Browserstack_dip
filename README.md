@@ -49,4 +49,4 @@ Click <a target="_blank" href="https://jenkins.autotests.cloud/job/Browserstack_
 ### Telegram
 ![Telegram](images/Telegram.png)
 
-:green_circle:\* ###Еxamples of UI tests are\* <a target="_blank" href="https://jenkins.autotests.cloud/job/Browserstack_dip/">here</a>
+:green_circle:\ ### Еxamples of UI tests are\ <a target="_blank" href="https://jenkins.autotests.cloud/job/Browserstack_dip/">here</a>
