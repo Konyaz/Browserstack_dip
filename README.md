@@ -1,6 +1,6 @@
 ## Automated App testing (Android) for https://translate.google.com/
 
-#### *Quick project example with infrastructure: Selenide UI tests with Allure report, remote run on Selenoid and push notifications to Telegram*
+#### *Quick project example with infrastructure: Selenide UI tests with Allure report, remote run on Browserstack and push notifications to Telegram*
 
 ### Technology Stack
 
