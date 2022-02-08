@@ -17,6 +17,8 @@
 ![Selenoid](images/icons/Selenoid.png)
 ![Telegram](images/icons/Telegram.png)
 
+### Еxamples of UI tests are <a target="_blank" href="https://jenkins.autotests.cloud/job/Browserstack_dip/">here</a> :green_circle:
+
 ## Run locally
 
 If you've downloaded these tests to your computer, run them with the following command:
@@ -24,7 +26,7 @@ If you've downloaded these tests to your computer, run them with the following c
 gradle clean test
 ```
 
-### Еxamples of UI tests are <a target="_blank" href="https://jenkins.autotests.cloud/job/Browserstack_dip/">here</a> :green_circle:
+
 
 ### Allure report
 ![Allure](images/Allure1.png)
