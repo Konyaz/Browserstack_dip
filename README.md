@@ -50,5 +50,5 @@ Click <a target="_blank" href="https://jenkins.autotests.cloud/job/Browserstack_
 ![Telegram](images/Telegram.png)
 
 
-### Еxamples of UI tests are <a target="_blank" href="https://jenkins.autotests.cloud/job/Browserstack_dip/">here</a>
+### Еxamples of UI tests are <a target="_blank" href="https://jenkins.autotests.cloud/job/Browserstack_dip/">here</a> :green_circle: 
 
