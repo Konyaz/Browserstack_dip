@@ -44,12 +44,12 @@ gradle clean test
 ![TestOps Dashboards](images/AllureTestOps.png)
 
 
-:robot: ###Automated tests can be imported by Allure TestOps as test cases.
+###Automated tests can be imported by Allure TestOps as test cases. :robot:
 
 ![TestOps TestCases](images/AllureTestOps1.png)
 
 
-### Video
+### Video :tv:
 ![Video](images/Video.gif)
 
 ### Jenkins
