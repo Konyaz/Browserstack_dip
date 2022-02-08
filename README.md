@@ -38,11 +38,14 @@ gradle clean test
 
 
 ### Allure TestOps
+
 :bar_chart: Dashboards
+
 ![TestOps Dashboards](images/AllureTestOps.png)
 
 
-:robot: Automated tests can be imported by Allure TestOps as test cases.
+:robot: ###Automated tests can be imported by Allure TestOps as test cases.
+
 ![TestOps TestCases](images/AllureTestOps1.png)
 
 
