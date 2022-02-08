@@ -7,6 +7,7 @@
 ![Browserstack](images/icons/Browserstack.svg)
 ![Appium](images/icons/Appium.svg)
 ![IntelliJ Idea](images/icons/Idea.png)
+![IntelliJ Idea](images/icons/Git.png)
 ![Java](images/icons/Java.png)
 ![Gradle](images/icons/Gradle.png)
 ![JUnit5](images/icons/JUnit5.png)
