@@ -22,24 +22,24 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
     }
 
     @Override
-public WebDriver createDriver(DesiredCapabilities desiredCapabilities) {
+    public WebDriver createDriver(DesiredCapabilities desiredCapabilities) {
 
-    // Set your access credentials
-    desiredCapabilities.setCapability("browserstack.user", config.getUser());
-    desiredCapabilities.setCapability("browserstack.key", config.getPassword());
+        // Set your access credentials
+        desiredCapabilities.setCapability("browserstack.user", config.getUser());
+        desiredCapabilities.setCapability("browserstack.key", config.getPassword());
 
-    // Set URL of the application under test
-    desiredCapabilities.setCapability("app", config.getApp());
+        // Set URL of the application under test
+        desiredCapabilities.setCapability("app", config.getApp());
 
-    // Specify device and os_version for testing
-    desiredCapabilities.setCapability("device", config.getDevice());
-    desiredCapabilities.setCapability("os_version", config.getOsVersion());
+        // Specify device and os_version for testing
+        desiredCapabilities.setCapability("device", config.getDevice());
+        desiredCapabilities.setCapability("os_version", config.getOsVersion());
 
-    // Set other BrowserStack capabilities
-    desiredCapabilities.setCapability("project", config.getProject());
-    desiredCapabilities.setCapability("build", config.getBuild());
-    desiredCapabilities.setCapability("name", config.getName());
+        // Set other BrowserStack capabilities
+        desiredCapabilities.setCapability("project", config.getProject());
+        desiredCapabilities.setCapability("build", config.getBuild());
+        desiredCapabilities.setCapability("name", config.getName());
 
-    return new AndroidDriver(getBrowserstackUrl(), desiredCapabilities);
-}
+        return new AndroidDriver(getBrowserstackUrl(), desiredCapabilities);
+    }
 }

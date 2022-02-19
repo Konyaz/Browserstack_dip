@@ -28,12 +28,10 @@ public class BrowserstackTests extends TestBase {
             $(MobileBy.id("com.google.android.apps.translate:id/result_selector")).click();
             $(MobileBy.id("android:id/text1")).shouldHave(text("Hello"));
         });
+
         step("Switch language check", () -> {
             $(MobileBy.id("com.google.android.apps.translate:id/btn_lang_picker_swap")).click();
             $(MobileBy.id("com.google.android.apps.translate:id/picker1")).shouldHave(text("Spanish"));
-
-
         });
-
     }
 }
